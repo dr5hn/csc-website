@@ -1,0 +1,16 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.main {
+  section {
+    padding: 5rem 0;
+
+    @media screen and (max-width: 996px) {
+      padding: 2.5rem 0;
+    }
+  }
+}
