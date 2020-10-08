@@ -14,7 +14,7 @@ function Hero() {
     <header id="hero" className={clsx("hero", styles.banner)}>
       <div className="container">
         <img
-          src={useBaseUrl(`img/logo.svg`)}
+          src={useBaseUrl(`img/world.svg`)}
           alt="Logo"
           className={styles.logo}
         />
@@ -34,6 +34,16 @@ function Hero() {
           >
             Get Started
           </Link>
+
+        </div>
+        <div className={clsx(styles.buttons, styles.githubStars)}>
+          <iframe
+            className={styles.githubStarsButton}
+            src="https://ghbtns.com/github-btn.html?user=dr5hn&amp;repo=countries-states-cities-database&amp;type=star&amp;count=true&amp;size=large"
+            width={160}
+            height={30}
+            title="GitHub Stars"
+          />
         </div>
       </div>
     </header>

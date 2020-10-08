@@ -1,83 +1,55 @@
 const snippets = [
   {
-    label: "Entity",
-    code: `#[derive(Entity, Default)]
-#[entity(table_name = "my_table_name")] // optional
-#[index(name = "myindex", columns = "name, datetime", unique)] // optional
-pub struct MyEntity {
-    #[primary_key]
-    id: i32,
-    name: String,
+    label: "Countries",
+    code: `var headers = new Headers();
+headers.append("X-CSCAPI-KEY", "API_KEY");
 
-    #[indexed] // optional
-    integer: i32,
-    integer64: i64,
+var requestOptions = {
+  method: 'GET',
+  headers: headers,
+  redirect: 'follow'
+};
 
-    float: f32,
-    double: f64,
-
-    boolean: bool,
-
-    datetime: Option<DateTime<Utc>>
-}`,
+fetch("https://api.countrystatecity.in/v1/countries", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+    `,
   },
   {
-    label: "Insert/Update",
-    code: `#[derive(Entity, Default)]
-pub struct MyEntity {
-    #[primary_key]
-    id: i32,
-    name: String,
-}
+    label: "States of Country",
+    code: `var headers = new Headers();
+headers.append("X-CSCAPI-KEY", "API_KEY");
 
-#[tokio::main]
-async fn main() {
-    let mut entity = MyEntity::default();
-    entity.name = "Hello world"
+var requestOptions = {
+  method: 'GET',
+  headers: headers,
+  redirect: 'follow'
+};
 
-    let uri = "postgres://postgres:postgres@localhost/postgres";
-    let db = Db::connect(&uri, 50, None).await.unwrap();
-
-    let creating = entity.save(&db).await.unwrap();
-}`,
+// Pass Country Code -- Eg: Country Code : IN
+fetch("https://api.countrystatecity.in/v1/countries/IN/states", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));`,
   },
   {
-    label: "Select",
-    code: `#[derive(Entity, Default)]
-pub struct MyEntity {
-    #[primary_key]
-    id: i32,
-    name: String,
-}
+    label: "Cities of State",
+    code: `var headers = new Headers();
+headers.append("X-CSCAPI-KEY", "API_KEY");
 
-#[tokio::main]
-async fn main() {
-    let uri = "postgres://postgres:postgres@localhost/postgres";
-    let db = Db::connect(&uri, 50, None).await.unwrap();
+var requestOptions = {
+  method: 'GET',
+  headers: headers,
+  redirect: 'follow'
+};
 
-    let id = 1;
-    let results = MyEntity::find(&db, "id = $1", &[&id]).await.unwrap();
-}`,
-  },
-  {
-    label: "Delete",
-    code: `#[derive(Entity, Default)]
-pub struct MyEntity {
-    #[primary_key]
-    id: i32,
-    name: String,
-}
-
-#[tokio::main]
-async fn main() {
-    let uri = "postgres://postgres:postgres@localhost/postgres";
-    let db = Db::connect(&uri, 50, None).await.unwrap();
-
-    let id = 1;
-    let mut result = MyEntity::first(&db, "id = $1", &[&id]).await.unwrap();
-    let deleted: bool = result.delete(&db).await.unwrap();
-}`,
-  },
+// Pass Country & State Code -- Eg: Country Code : IN & State Code : MH
+fetch("https://api.countrystatecity.in/v1/countries/IN/states/MH/cities", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));`,
+  }
 ];
 
 export default snippets;

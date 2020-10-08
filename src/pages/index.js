@@ -8,7 +8,6 @@ import Prism from "prism-react-renderer/prism";
 (typeof global !== "undefined" ? global : window).Prism = Prism;
 require("prismjs/components/prism-rust");
 
-import Comparison from "@theme/Comparison";
 import Examples from "@theme/Examples";
 import Features from "@theme/Features";
 import Hero from "@theme/Hero";
@@ -24,7 +23,6 @@ function Home() {
 
         <main className={styles.main}>
           <Features />
-          <Comparison />
           <Examples />
         </main>
       </Layout>

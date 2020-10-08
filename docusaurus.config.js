@@ -1,6 +1,12 @@
+const logo = {
+  alt: 'Country State City API Documentation',
+  src: 'img/world.svg',
+  // srcDark: 'img/docusaurus_keytar.svg',
+};
+
 module.exports = {
   title: 'Country State City API',
-  tagline: 'Country State City API Documentation Website',
+  tagline: 'Documentation Website',
   url: 'https://countrystatecity.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -150,11 +156,7 @@ module.exports = {
     navbar: {
       hideOnScroll: false,
       title: 'Country State City API',
-      logo: {
-        alt: 'Country State City API Documentation',
-        src: 'img/world.svg',
-        // srcDark: 'img/docusaurus_keytar.svg',
-      },
+      logo: logo,
       items: [
         {
           to: "docs",
@@ -170,7 +172,7 @@ module.exports = {
         },
         {
           href: 'https://github.com/dr5hn/countries-states-cities-database',
-          label: "Github",
+          // label: "Github",
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -179,7 +181,8 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      copyright: `Built with Docusaurus.`,
+      logo,
+      copyright: `Made with ❤️ in India<img src="img/india.svg" width="16">. Built with Docusaurus.`,
     },
   },
 

@@ -1,54 +1,57 @@
 import React from "react";
 import clsx from "clsx";
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 import styles from "./styles.module.scss";
 
 const size = 24;
 const data = [
   {
-    title: <>Dead simple, but powerful</>,
+    title: <>Countries</>,
+    icon: 'img/features/countries-w.svg',
+    iconDark: 'img/features/countries-b.svg',
     description: (
       <>
-        Oxidizer is a Rust ORM based on tokio-postgres and refinery. Two
-        powerful libraries that give performance and reliability to perform
-        database interactions.
+        Get a list of countries with ISO2, ISO3, Phonecode, Capital, Currency, Flag etc.
       </>
     ),
   },
   {
-    title: <>Asynchronous from the ground up</>,
+    title: <>States</>,
+    icon: 'img/features/states-w.svg',
+    iconDark: 'img/features/states-b.svg',
     description: (
       <>
-        By using tokio and tokio-postgres, all the database operations are
-        efficiently handled by tokio at runtime.
+        Get a list of states with ISO2 code and attached to its belonging country code.
       </>
     ),
   },
   {
-    title: <>Relations</>,
+    title: <>Cities</>,
+    icon: 'img/features/cities-w.svg',
+    iconDark: 'img/features/cities-b.svg',
     description: (
       <>
-        Oxidizer macros generate code to access forward and reverse relations
-        between entities with ease.
-      </>
-    ),
-  },
-  {
-    title: <>Productive and Extensible</>,
-    description: (
-      <>
-        Write reusable code and think in terms of your problem domain, not SQL.
+        Get a list of cities attached with state and country code, longitude and latitude information.
       </>
     ),
   },
 ];
 
-function Feature({ icon, title, description }) {
+function Feature({ icon, iconDark, title, description }) {
+  const {isDarkTheme} = useThemeContext();
   return (
-    <div className={clsx("col col--6", styles.feature)}>
+    <div className={clsx("col col--4", styles.feature)}>
       <div className="item">
+        {icon && <div className={styles.icon}>
+          <img
+            src={(isDarkTheme) ? useBaseUrl(iconDark) : useBaseUrl(icon)}
+            alt={title}
+            width="64"
+          />
+        </div>}
         <div className={styles.header}>
-          {icon && <div className={styles.icon}>{icon}</div>}
           <h2 className={styles.title}>{title}</h2>
         </div>
         <p>{description}</p>

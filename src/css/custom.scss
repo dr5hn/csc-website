@@ -6,16 +6,19 @@
  */
 
 /* You can override the default Infima variables here. */
+// Primary Blue: #2296f3
+// Primary Green: #cddc39
+
 :root {
   --ifm-background-color: #fff;
   --ifm-background-surface-color: #f2f6fa;
-  --ifm-color-primary: #ff6344;
-  --ifm-color-primary-dark: #ff4824;
-  --ifm-color-primary-darker: #ff3b14;
-  --ifm-color-primary-darkest: #e22500;
-  --ifm-color-primary-light: #ff7e64;
-  --ifm-color-primary-lighter: #ff8b74;
-  --ifm-color-primary-lightest: #ffb4a5;
+  --ifm-color-primary: #2296f3;
+  --ifm-color-primary-dark: #1490f3;
+  --ifm-color-primary-darker: #0b8df5;
+  --ifm-color-primary-darkest: #1567c0;
+  --ifm-color-primary-light: #2b98f1;
+  --ifm-color-primary-lighter: #38a1f7;
+  --ifm-color-primary-lightest: #54aef9;
   --ifm-card-background-color: var(--ifm-background-color);
   --ifm-footer-background-color: var(--ifm-background-surface-color);
 }
@@ -23,13 +26,13 @@
 html[data-theme="dark"] {
   // --ifm-background-color: #242526;
   // --ifm-background-surface-color: #18191a;
-  --ifm-color-primary: #ffcf5d;
-  --ifm-color-primary-dark: #ffc53a;
-  --ifm-color-primary-darker: #ffc029;
-  --ifm-color-primary-darkest: #f4ab00;
-  --ifm-color-primary-light: #ffd980;
-  --ifm-color-primary-lighter: #ffde91;
-  --ifm-color-primary-lightest: #ffeec5;
+  --ifm-color-primary: #cddc39;
+  --ifm-color-primary-dark: #d0e02f;
+  --ifm-color-primary-darker: #cfe027;
+  --ifm-color-primary-darkest: #cade09;
+  --ifm-color-primary-light:#d1de53;
+  --ifm-color-primary-lighter: #d5e064;
+  --ifm-color-primary-lightest: #dde679;
 }
 
 .docusaurus-highlight-code-line {
@@ -41,4 +44,35 @@ html[data-theme="dark"] {
   html[data-theme="dark"] & {
     background-color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.navbar {
+  background-color: #fff;
+
+  html[data-theme="dark"] & {
+    background-color: rgb(72, 77, 91);
+  }
+}
+
+.header-github-link {
+  &:hover {
+    opacity: 0.6;
+  }
+  &:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+      no-repeat;
+
+    html[data-theme="dark"] & {
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+        no-repeat;
+    }
+  }
+}
+
+.footer__logo {
+  width: 64px;
 }
