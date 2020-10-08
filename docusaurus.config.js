@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://countrystatecity.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/world.png',
   organizationName: 'dr5hn', // Usually your GitHub org/user name.
   projectName: 'csc-website', // Usually your repo name.
   customFields: {
@@ -130,8 +130,8 @@ module.exports = {
     },
     announcementBar: {
       id: 'supportus',
-      backgroundColor: '#fafbfc',
-      textColor: '#091E42', // Defaults to `#000`.
+      backgroundColor: '#cddc39',
+      textColor: '#000', // Defaults to `#000`.
       isCloseable: false, // Defaults to `true`.
       content:
         '⭐️ If you like CountryStateCity DB, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dr5hn/countries-states-cities-database">GitHub</a>! ⭐️',
@@ -149,11 +149,11 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: false,
-      title: 'My Site',
+      title: 'Country State City API',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-        srcDark: 'img/docusaurus_keytar.svg',
+        alt: 'Country State City API Documentation',
+        src: 'img/world.svg',
+        // srcDark: 'img/docusaurus_keytar.svg',
       },
       items: [
         {
