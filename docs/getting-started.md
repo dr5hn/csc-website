@@ -5,30 +5,21 @@ sidebar_label: Getting Started
 slug: /
 ---
 
-[![Actions Status][ci-badge]][ci-url]
-[![Crates.io][crates-badge]][crates-url]
-[![API Docs][docs-badge]][docs-url]
-[![MIT licensed][mit-badge]][mit-url]
-[![Gitter](https://badges.gitter.im/oxidizer-rs/community.svg)][glitter-url]
+![release](https://img.shields.io/github/v/release/dr5hn/countries-states-cities-database?style=flat-square)
+![size](https://img.shields.io/github/repo-size/dr5hn/countries-states-cities-database?label=size&style=flat-square)
 
-[ci-badge]: https://github.com/oxidizer-rs/oxidizer/workflows/test/badge.svg
-[ci-url]: https://github.com/oxidizer-rs/oxidizer/actions
-[crates-badge]: https://img.shields.io/crates/v/oxidizer.svg
-[crates-url]: https://crates.io/crates/oxidizer
-[docs-badge]: https://docs.rs/oxidizer/badge.svg
-[docs-url]: https://docs.rs/oxidizer
-[mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[mit-url]: https://github.com/oxidizer-rs/oxidizer/blob/main/LICENSE
-[glitter-url]: https://gitter.im/oxidizer-rs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+🌍 World countries, states/regions, cities in JSON, SQL, XML, PLIST, YAML and CSV. All Countries, Cities, States with ISO2, ISO3, Country Code, Phone Code, Capital and Currency [Linked with Each Other By ID]
 
-A Rust ORM based on [tokio-postgres](https://crates.io/crates/tokio-postgres) and [refinery](https://crates.io/crates/refinery) that helps you reduce the boilerplate of writing entities, tables & migrations when using tokio-postgres and refinery.
+## Insights
+Total Countries : 248 <br/>
+Total States/Regions/Municipalities : 4,872 <br/>
+Total Cities/Towns/Districts : 143,892 <br/>
 
-- Asynchronous from the ground up. All the database operations are
-  efficiently handled by tokio at runtime.
-- Oxidizer macros generate code to access relations between entities with ease. Forward and reverse relations are supported.
+:::info
 
-:::caution
-
-Note that, while functional and working, this is in early stages. Use with caution.
+This Free database does not guarantee for the complete list of world
+countries, states & cities.
+You can manually change the spelling mistakes, duplicates
+or add edit any records, which are incorrect.
 
 :::

@@ -164,11 +164,22 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        // { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: "https://api.countrystatecity.in/play",
           label: "Playground",
           position: "left",
+        },
+        {
+          href: "https://dr5hn.github.io/countries-states-cities-database/",
+          label: "Demo",
+          position: "left",
+        },
+        {
+          to: "request",
+          activeBasePath: "request",
+          label: "Request API Key",
+          position: "right",
         },
         {
           href: 'https://github.com/dr5hn/countries-states-cities-database',

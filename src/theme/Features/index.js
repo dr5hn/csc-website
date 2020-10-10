@@ -5,7 +5,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 
 import styles from "./styles.module.scss";
 
-const size = 24;
+const size = 64;
 const data = [
   {
     title: <>Countries</>,
@@ -48,7 +48,7 @@ function Feature({ icon, iconDark, title, description }) {
           <img
             src={(isDarkTheme) ? useBaseUrl(iconDark) : useBaseUrl(icon)}
             alt={title}
-            width="64"
+            width={size}
           />
         </div>}
         <div className={styles.header}>

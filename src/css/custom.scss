@@ -46,6 +46,10 @@ html[data-theme="dark"] {
   }
 }
 
+div[role|="banner"] {
+  z-index: 1;
+}
+
 .navbar {
   background-color: #fff;
 
@@ -71,6 +75,10 @@ html[data-theme="dark"] {
         no-repeat;
     }
   }
+}
+
+footer {
+  z-index: 1;
 }
 
 .footer__logo {

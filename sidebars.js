@@ -6,20 +6,24 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Examples",
+      label: "API",
       collapsed: false,
       items: [
-        "examples/entity-basic",
-        "examples/entity-complex",
-        "examples/insert-update",
-        "examples/select",
-        "examples/delete",
-        "examples/raw",
+        "api/all-countries",
+        "api/country",
+        "api/all-states",
+        "api/states-by-country",
+        "api/state",
+        "api/cities-by-state-country",
       ],
     },
     {
       type: "doc",
       id: "contributing",
+    },
+    {
+      type: "doc",
+      id: "donate",
     },
   ],
 };
