@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://countrystatecity.in/blog</id>
+    <title>Country State City API Blog</title>
+    <updated>2020-10-10T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://countrystatecity.in/blog"/>
+    <subtitle>Country State City API Blog</subtitle>
+    <icon>https://countrystatecity.in/img/world.png</icon>
+    <rights>Copyright © 2020 Facebook, Inc.</rights>
+    <entry>
+        <title type="html"><![CDATA[🌍 Countries States Cities DB]]></title>
+        <id>welcome</id>
+        <link href="https://countrystatecity.in/blog/welcome"/>
+        <updated>2020-10-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[banner]]></summary>
+    </entry>
+</feed>
