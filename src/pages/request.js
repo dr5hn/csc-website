@@ -13,7 +13,7 @@ const Request = () => {
                     alignItems: 'center',
                     fontSize: '20px',
                 }}>
-                <ReactTypeformEmbed url="https://gadadarshan.typeform.com/to/bmPlJFPe" />
+                <ReactTypeformEmbed url="https://gadadarshan.typeform.com/to/eP0xEgyX" />
             </div>
         </Layout >
     );
