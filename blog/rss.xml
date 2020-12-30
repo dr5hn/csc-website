@@ -4,16 +4,9 @@
         <title>Country State City API Blog</title>
         <link>https://countrystatecity.in/blog</link>
         <description>Country State City API Blog</description>
-        <lastBuildDate>Sat, 10 Oct 2020 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Oct 2015 23:29:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Copyright © 2020 Facebook, Inc.</copyright>
-        <item>
-            <title><![CDATA[🌍 Countries States Cities DB]]></title>
-            <link>https://countrystatecity.in/blog/welcome</link>
-            <guid>welcome</guid>
-            <pubDate>Sat, 10 Oct 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[banner]]></description>
-        </item>
     </channel>
 </rss>
