@@ -1,7 +1,7 @@
 ---
-id: all-states
-title: Get a list of States
-sidebar_label: All States
+id: cities-by-country
+title: Get a list of Cities within country
+sidebar_label: Cities By Country
 ---
 
 export const Highlight = ({children, color}) => (
@@ -16,7 +16,7 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-<Highlight color="#25c2a0">GET</Highlight> /v1/states
+<Highlight color="#25c2a0">GET</Highlight> /v1/countries/[ciso]/cities
 
 ## Security
 This api use API KEY as an authentication method.
@@ -24,23 +24,23 @@ This api use API KEY as an authentication method.
 * In: header
 
 ## Request Parameters
-No parameters
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| ciso | URL | ISO2 Code of Country | <Highlight color="#d73232">Required</Highlight> | string |
 
 ## Response
 | Code | Description |
 | ---- | ----------- |
-| 200 | Return a list of states |
+| 200 | Return a list of cities |
 | 401 | Unauthorized. |
+| 404 | Not Found. |
 
 ## Example Success Response
 ```json
 [
   {
-    "id": 4008,
-    "name": "Maharashtra",
-    "country_id": 101,
-    "country_code": "IN",
-    "iso2": "MH"
+    "id": 133024,
+    "name": "Mumbai",
   },
   ...
 ]
@@ -50,5 +50,12 @@ No parameters
 ```json
 {
   "error'": "Unauthorized. You shouldn't be here."
+}
+```
+
+## Example Not Found Response
+```json
+{
+  "error'": "No Cities found."
 }
 ```

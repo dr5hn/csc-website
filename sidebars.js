@@ -15,6 +15,7 @@ module.exports = {
         "api/states-by-country",
         "api/state",
         "api/cities-by-state-country",
+        "api/cities-by-country",
       ],
     },
     {

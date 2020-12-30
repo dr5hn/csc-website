@@ -15,7 +15,7 @@ module.exports = {
   projectName: 'csc-website', // Usually your repo name.
   customFields: {
     description:
-      'An optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more.',
+      '🌍 World countries, states, regions, provinces, cities, towns in JSON, SQL, XML, PLIST, YAML, and CSV. All Countries, States, Cities with ISO2, ISO3, Country Code, Phone Code, Capital, Native Language, Timezones, Latitude, Longitude, Region, Subregion, Flag Emoji, and Currency. #countries #states #cities - dr5hn/countries-states-cities-database',
   },
   plugins: [
     'docusaurus-plugin-sass',
@@ -108,6 +108,16 @@ module.exports = {
           href: "https://dr5hn.github.io/countries-states-cities-database/",
           label: "Demo",
           position: "left",
+        },
+        {
+          href: "https://github.com/dr5hn/countries-states-cities-database/discussions/151",
+          label: "Feedback/Suggestions",
+          position: "right",
+        },
+        {
+          href: "https://github.com/dr5hn/csc-website/issues",
+          label: "Bug/Issues",
+          position: "right",
         },
         {
           to: "request",
