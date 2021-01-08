@@ -16,7 +16,7 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-<Highlight color="#25c2a0">GET</Highlight> /v1/countries/[ciso]/states
+<Highlight color="#25c2a0">GET</Highlight> https://api.countrystatecity.in/v1/countries/[ciso]/states
 
 ## Security
 This api use API KEY as an authentication method.
