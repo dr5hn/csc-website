@@ -50,6 +50,11 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    gtag: {
+      trackingID: 'G-XPF0QLDXVS',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     colorMode: {
       disableSwitch: false,
       respectPrefersColorScheme: true,
