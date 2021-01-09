@@ -82,9 +82,6 @@ module.exports = {
         '⭐️ If you like CountryStateCity DB, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dr5hn/countries-states-cities-database">GitHub</a>! ⭐️',
     },
     image: 'img/docusaurus-soc.png',
-    gtag: {
-      trackingID: 'UA-141789564-1',
-    },
     algolia: {
       apiKey: '4d226a12bfacfc0155241188c56d579d',
       indexName: 'CSC_DOCS',
