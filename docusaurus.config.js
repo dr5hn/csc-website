@@ -139,7 +139,7 @@ module.exports = {
     footer: {
       style: 'dark',
       logo,
-      copyright: `Made with ❤️ in India<img src="img/india.svg" width="16">. Built with Docusaurus.`,
+      copyright: `Made with ❤️ in India<img src="/img/india.svg" width="16">. Built with Docusaurus.`,
     },
   },
 
