@@ -19,15 +19,6 @@ module.exports = {
   },
   plugins: [
     'docusaurus-plugin-sass',
-    // '@docusaurus/plugin-google-gtag',
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ]
   ],
   presets: [
     [
@@ -43,6 +34,11 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          trailingSlash: false,
         },
       },
     ],
