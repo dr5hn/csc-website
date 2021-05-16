@@ -32,6 +32,23 @@ No parameters
 | 200 | Return a list of states |
 | 401 | Unauthorized. |
 
+## Example Usage
+```jsx title="countries-states-cities.js"
+var headers = new Headers();
+headers.append("X-CSCAPI-KEY", "API_KEY");
+
+var requestOptions = {
+  method: 'GET',
+  headers: headers,
+  redirect: 'follow'
+};
+
+fetch("https://api.countrystatecity.in/v1/states", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
 ## Example Success Response
 ```json
 [

@@ -19,6 +19,15 @@ module.exports = {
   },
   plugins: [
     'docusaurus-plugin-sass',
+    '@docusaurus/plugin-google-gtag',
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        trailingSlash: false,
+      },
+    ]
   ],
   presets: [
     [
@@ -29,19 +38,8 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/dr5hn/csc-website/edit/main/',
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
-        },
-        blog: {
-          postsPerPage: 3,
-          showReadingTime: true,
-          feedOptions: {
-            type: 'all',
-            copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
-          },
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/dr5hn/csc-website/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -82,13 +80,6 @@ module.exports = {
         '⭐️ If you like CountryStateCity DB, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dr5hn/countries-states-cities-database">GitHub</a>! ⭐️',
     },
     image: 'img/docusaurus-soc.png',
-    algolia: {
-      apiKey: '4d226a12bfacfc0155241188c56d579d',
-      indexName: 'CSC_DOCS',
-      searchParameters: {
-        facetFilters: [`version:latest`],
-      },
-    },
     navbar: {
       hideOnScroll: false,
       title: 'Country State City API',
@@ -97,7 +88,7 @@ module.exports = {
         {
           to: "docs",
           activeBasePath: "docs",
-          label: "Docs",
+          label: "Documentation",
           position: "left",
         },
         // { to: 'blog', label: 'Blog', position: 'left' },
@@ -112,13 +103,14 @@ module.exports = {
           position: "left",
         },
         {
-          href: "https://github.com/dr5hn/countries-states-cities-database/discussions/151",
-          label: "Feedback/Suggestions",
-          position: "right",
+          href: "https://stats.uptimerobot.com/VZ2NqHlJYM",
+          label: "Status",
+          position: "left",
         },
         {
-          href: "https://github.com/dr5hn/csc-website/issues",
-          label: "Bug/Issues",
+          href: "faq",
+          activeBasePath: "faq",
+          label: "FAQs",
           position: "right",
         },
         {
@@ -128,18 +120,29 @@ module.exports = {
           position: "right",
         },
         {
+          href: "donate",
+          activeBasePath: "donate",
+          label: "Donate",
+          position: "right",
+        },
+        {
           href: 'https://github.com/dr5hn/countries-states-cities-database',
-          // label: "Github",
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
+        },
+        {
+          href: 'https://twitter.com/dr5hn',
+          position: 'right',
+          className: 'header-twitter-link',
+          'aria-label': 'Follow me on Twitter',
         },
       ],
     },
     footer: {
       style: 'dark',
       logo,
-      copyright: `Made with ❤️ in India<img src="/img/india.svg" width="16">. Built with Docusaurus.`,
+      copyright: `Made with 💚 in India<img src="/img/india.svg" width="16"> <br>Built with <a href="https://docusaurus.io/" target="_blank" rel="noreferrer">Docusaurus</a>`,
     },
   },
 
