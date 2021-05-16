@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     'docusaurus-plugin-sass',
-    '@docusaurus/plugin-google-gtag',
+    // '@docusaurus/plugin-google-gtag',
     [
       '@docusaurus/plugin-sitemap',
       {
