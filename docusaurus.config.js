@@ -75,7 +75,7 @@ module.exports = {
       content:
         '⭐️ If you like CountryStateCity DB, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dr5hn/countries-states-cities-database">GitHub</a>! ⭐️',
     },
-    image: 'img/docusaurus-soc.png',
+    image: 'img/api.png',
     navbar: {
       hideOnScroll: false,
       title: 'Country State City API',
