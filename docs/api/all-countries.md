@@ -4,6 +4,9 @@ title: Get a list of Countries
 sidebar_label: All Countries
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 export const Highlight = ({children, color}) => (
   <span
     style={{
@@ -27,13 +30,16 @@ This api use API KEY as an authentication method.
 No parameters
 
 ## Response
-| Code | Description |
-| ---- | ----------- |
-| 200 | Return a list of countries |
-| 401 | Unauthorized. |
+| Code | Description                |
+| ---- | -------------------------- |
+| 200  | Return a list of countries |
+| 401  | Unauthorized.              |
 
 ## Example Usage
-```jsx title="countries-states-cities.js"
+<Tabs>
+  <TabItem value="js" label="Javascript" default>
+
+   ```jsx title="countries-states-cities.js"
 var headers = new Headers();
 headers.append("X-CSCAPI-KEY", "API_KEY");
 
@@ -48,6 +54,51 @@ fetch("https://api.countrystatecity.in/v1/countries", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+
+  </TabItem>
+
+  <TabItem value="php" label="PHP">
+
+```php title="countries-states-cities.php"
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api.countrystatecity.in/v1/countries',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_HTTPHEADER => array(
+    'X-CSCAPI-KEY: API_KEY'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+```
+
+  </TabItem>
+
+  <TabItem value="py" label="Python">
+
+```py title="countries-states-cities.py"
+import requests
+
+url = "https://api.countrystatecity.in/v1/countries"
+
+headers = {
+  'X-CSCAPI-KEY': 'API_KEY'
+}
+
+response = requests.request("GET", url, headers=headers)
+
+print(response.text)
+```
+
+  </TabItem>
+</Tabs>
+
 
 ## Example Success Response
 ```json

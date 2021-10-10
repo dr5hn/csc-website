@@ -4,6 +4,9 @@ title: Get a list of States
 sidebar_label: All States
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 export const Highlight = ({children, color}) => (
   <span
     style={{
@@ -33,7 +36,10 @@ No parameters
 | 401 | Unauthorized. |
 
 ## Example Usage
-```jsx title="countries-states-cities.js"
+<Tabs>
+  <TabItem value="js" label="Javascript" default>
+
+   ```jsx title="countries-states-cities.js"
 var headers = new Headers();
 headers.append("X-CSCAPI-KEY", "API_KEY");
 
@@ -48,6 +54,50 @@ fetch("https://api.countrystatecity.in/v1/states", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+
+  </TabItem>
+
+  <TabItem value="php" label="PHP">
+
+```php title="countries-states-cities.php"
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api.countrystatecity.in/v1/states',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_HTTPHEADER => array(
+    'X-CSCAPI-KEY: API_KEY'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+```
+
+  </TabItem>
+
+  <TabItem value="py" label="Python">
+
+```py title="countries-states-cities.py"
+import requests
+
+url = "https://api.countrystatecity.in/v1/states"
+
+headers = {
+  'X-CSCAPI-KEY': 'API_KEY'
+}
+
+response = requests.request("GET", url, headers=headers)
+
+print(response.text)
+```
+
+  </TabItem>
+</Tabs>
 
 ## Example Success Response
 ```json
