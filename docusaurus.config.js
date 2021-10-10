@@ -13,6 +13,7 @@ module.exports = {
   favicon: 'img/world.png',
   organizationName: 'dr5hn', // Usually your GitHub org/user name.
   projectName: 'csc-website', // Usually your repo name.
+  trailingSlash: true,
   customFields: {
     description:
       '🌍 World countries, states, regions, provinces, cities, towns in JSON, SQL, XML, PLIST, YAML, and CSV. All Countries, States, Cities with ISO2, ISO3, Country Code, Phone Code, Capital, Native Language, Timezones, Latitude, Longitude, Region, Subregion, Flag Emoji, and Currency. #countries #states #cities - dr5hn/countries-states-cities-database',
@@ -38,7 +39,6 @@ module.exports = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          trailingSlash: false,
         },
       },
     ],
@@ -66,6 +66,7 @@ module.exports = {
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
+      additionalLanguages: ['php'],
     },
     announcementBar: {
       id: 'supportus',
@@ -82,12 +83,11 @@ module.exports = {
       logo: logo,
       items: [
         {
-          to: "docs",
+          to: "/docs/",
           activeBasePath: "docs",
           label: "Documentation",
           position: "left",
         },
-        // { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: "https://api.countrystatecity.in/play",
           label: "Playground",
@@ -104,19 +104,19 @@ module.exports = {
           position: "left",
         },
         {
-          href: "faq",
+          href: "/faq/",
           activeBasePath: "faq",
           label: "FAQs",
           position: "right",
         },
         {
-          to: "request",
+          to: "/request/",
           activeBasePath: "request",
           label: "Request API Key",
           position: "right",
         },
         {
-          href: "donate",
+          href: "/donate/",
           activeBasePath: "donate",
           label: "Donate",
           position: "right",
