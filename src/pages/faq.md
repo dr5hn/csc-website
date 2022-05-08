@@ -22,8 +22,8 @@ hide_table_of_contents: true
 ---
 ## 🔑 How do I get an API Key?
 
-You need to fill a form to [Request API Key](https://countrystatecity.in/request). 
-_(Note: Make sure you fill the form with valid inputs)_. 
+You need to fill a form to [Request API Key](https://countrystatecity.in/request).
+_(Note: Make sure you fill the form with valid inputs)_.
 The request will be reviewed by me and validated manually.
 
 ---
@@ -46,7 +46,7 @@ I should suggest you use a Unique API Key for each project. That will help us ea
 
 No, there are no such limitations that have been kept at the moment to the usage of API. You can use it freely but use it **Wisely**.
 * Try to keep API responses cached for at least a day. (Since this data is mostly static in nature and updates quite rarely).
-* If you're just using this API to leech the data or copy the data to your database then please consider using a direct source of the database from here. [CountriesStatesCitiesDB](https://github.com/dr5hn/countries-states-cities-database) 
+* If you're just using this API to leech the data or copy the data to your database then please consider using a direct source of the database from here. [CountriesStatesCitiesDB](https://github.com/dr5hn/countries-states-cities-database)
 
 ---
 ## 🆓 Is this API Free forever?

@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import {useColorMode} from '@docusaurus/theme-common';
 
 import styles from "./styles.module.scss";
 
@@ -40,13 +40,13 @@ const data = [
 ];
 
 function Feature({ icon, iconDark, title, description }) {
-  const {isDarkTheme} = useThemeContext();
+  const {colorMode, setColorMode} = useColorMode();
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="item">
         {icon && <div className={styles.icon}>
           <img
-            src={(isDarkTheme) ? useBaseUrl(iconDark) : useBaseUrl(icon)}
+            src={(colorMode === 'dark') ? useBaseUrl(iconDark) : useBaseUrl(icon)}
             alt={title}
             width={size}
           />

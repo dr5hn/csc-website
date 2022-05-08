@@ -10,9 +10,20 @@ module.exports = {
   url: 'https://countrystatecity.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
   favicon: 'img/world.png',
+
+  deploymentBranch: 'gh-pages',
+
   organizationName: 'dr5hn', // Usually your GitHub org/user name.
   projectName: 'csc-website', // Usually your repo name.
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
   trailingSlash: true,
   customFields: {
     description:
@@ -39,33 +50,24 @@ module.exports = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+        },
+        gtag: {
+          trackingID: 'G-XPF0QLDXVS',
+          // Optional fields.
+          anonymizeIP: true, // Should IPs be anonymized?
         },
       },
     ],
   ],
   themeConfig: {
-    gtag: {
-      trackingID: 'G-XPF0QLDXVS',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
     colorMode: {
+      defaultMode: 'light',
       disableSwitch: false,
       respectPrefersColorScheme: true,
-      switchConfig: {
-        darkIcon: "🌙",
-        darkIconStyle: {
-          marginLeft: "2px",
-        },
-        lightIcon: "☀️",
-        lightIconStyle: {
-          marginLeft: "1px",
-        },
-      },
     },
+    prismTheme: require('prism-react-renderer/themes/github'),
     prism: {
-      theme: require("prism-react-renderer/themes/github"),
-      darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: ['php'],
     },
     announcementBar: {
@@ -110,8 +112,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "/request/",
-          activeBasePath: "request",
+          href: "https://forms.gle/ckZ8Gub6jS9sUihJA",
           label: "Request API Key",
           position: "right",
         },
@@ -131,6 +132,12 @@ module.exports = {
           href: 'https://twitter.com/dr5hn',
           position: 'right',
           className: 'header-twitter-link',
+          'aria-label': 'Follow me on Twitter',
+        },
+        {
+          href: 'https://www.linkedin.com/in/dr5hn/',
+          position: 'right',
+          className: 'header-linkedin-link',
           'aria-label': 'Follow me on Twitter',
         },
       ],
