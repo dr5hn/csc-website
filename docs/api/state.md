@@ -101,6 +101,70 @@ print(response.text)
 ```
 
   </TabItem>
+
+  <TabItem value="axios" label="Axios">
+
+```jsx title="countries-states-cities.js"
+var axios = require('axios');
+
+var config = {
+  method: 'get',
+  url: 'https://api.countrystatecity.in/v1/countries/IN/states/MH',
+  headers: {
+    'X-CSCAPI-KEY': 'API_KEY'
+  }
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+```
+
+  </TabItem>
+
+  <TabItem value="dart" label="Dart">
+
+```dart title="countries-states-cities.dart"
+var headers = {
+  'X-CSCAPI-KEY': 'API_KEY'
+};
+
+var request = http.Request('GET', Uri.parse('https://api.countrystatecity.in/v1/countries/IN/states/MH'));
+
+request.headers.addAll(headers);
+
+http.StreamedResponse response = await request.send();
+
+if (response.statusCode == 200) {
+  print(await response.stream.bytesToString());
+} else {
+  print(response.reasonPhrase);
+}
+```
+
+  </TabItem>
+
+  <TabItem value="jquery" label="jQuery">
+
+```jsx title="countries-states-cities.js"
+var settings = {
+  "url": "https://api.countrystatecity.in/v1/countries/IN/states/MH",
+  "method": "GET",
+  "headers": {
+    "X-CSCAPI-KEY": "API_KEY"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+
+  </TabItem>
 </Tabs>
 
 ## Example Success Response

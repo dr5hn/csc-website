@@ -1813,11 +1813,6 @@
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
-"@typeform/embed@^1.28.2":
-  version "1.35.1"
-  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.35.1.tgz#96e0c84e0af385f90411b2f75277ca7ae0d50fa1"
-  integrity sha512-dDLewxUKwfCfU/nMaVpwQ3nOF1nMhey3wtALAQRgS9fe6XRbZH6YkmtqvTsxTjilOnswJqghGFJ3GfaZh87n/A==
-
 "@types/body-parser@*":
   version "1.19.2"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.19.2.tgz#aea2059e28b7658639081347ac4fab3de166e6f0"
@@ -6141,13 +6136,6 @@ react-textarea-autosize@^8.3.2:
     "@babel/runtime" "^7.10.2"
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
-
-react-typeform-embed@^1:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-typeform-embed/-/react-typeform-embed-1.0.8.tgz#69392eda09118abd99d442c9acd0af4b453d9584"
-  integrity sha512-ftW03ddp6r7+1CS6kzhWleFuqo7Hr0vZES3nfljkmFp4LqQfW53xwRWOdEhDMuWL7S/sjvVLggwEq6Av2ODV/A==
-  dependencies:
-    "@typeform/embed" "^1.28.2"
 
 react@^17.0.2:
   version "17.0.2"

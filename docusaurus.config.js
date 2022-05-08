@@ -68,7 +68,7 @@ module.exports = {
     },
     prismTheme: require('prism-react-renderer/themes/github'),
     prism: {
-      additionalLanguages: ['php'],
+      additionalLanguages: ['php', 'dart'],
     },
     announcementBar: {
       id: 'supportus',
