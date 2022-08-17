@@ -164,6 +164,26 @@ $.ajax(settings).done(function (response) {
 ```
 
   </TabItem>
+
+<TabItem value="go" label="go">
+
+```go title="countries-states-cities.go"
+url:="https://api.countrystatecity.in/v1/countries/IN"
+
+client := &http.Client{}
+req, _ := http.NewRequest("GET", url, nil)
+req.Header.Add("X-CSCAPI-KEY", API_KEY)
+res, _ := client.Do(req)
+defer res.Body.Close()
+bytes ,err := ioutil.ReadAll(res.Body)
+if err != nil {
+	fmt.Println(err.Error())
+}
+fmt.Println(string(bytes))
+```
+
+  </TabItem>
+
 </Tabs>
 
 ## Example Success Response
