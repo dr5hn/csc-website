@@ -5,15 +5,15 @@ hide_table_of_contents: true
 ---
 
 # Why donate?
-Many people love this service and have asked to donate. In all a good conscience, I can't write about how awesome and cost-effective AWS and private VPS are then asked for donations to fund it. Instead, it's enormously time-consuming to run this service and the sacrifices required to do so are where the real cost is. If you want to kick in to help me cover those costs, that would be awesome! 
+Many people love this service and have asked to donate. In all a good conscience, I can't write about how awesome and cost-effective AWS and private VPS are then asked for donations to fund it. Instead, it's enormously time-consuming to run this service and the sacrifices required to do so are where the real cost is. If you want to kick in to help me cover those costs, that would be awesome!
 
 :::note Using this API, If you're earning some bucks. Please consider donating 1% of your earnings.
 
-If you or your company use this project or like what I'm doing, please consider backing me so I can continue maintaining and evolving this project and new ones. 
+If you or your company use this project or like what I'm doing, please consider backing me so I can continue maintaining and evolving this project and new ones.
 
 :::
 
-## Choose what you'd like to donate from the items below then click the button: 
+## Choose what you'd like to donate from the items below then click the button:
 
 ### 3$ — A large cappuccino 😍 at my local
 
@@ -31,10 +31,10 @@ This service is used by more and more users every month (+ 50% MoM). Private VPS
 
 ### Spread a Word
 
-[![Twitter Share](https://github.com/dr5hn/dr5hn/blob/main/.github/resources/twitter-share-button.png)](https://twitter.com/intent/tweet?url=https://github.com/dr5hn/countries-states-cities-database&text=Hey%20everyone,%20%0AI%20found%20this%20%F0%9F%8C%8D%20Countries%20States%20Cities%20Database%20useful.%0A%0AThanks%20to%20@dr5hn%20for%20making%20this%20awesome%20project.%0A%0AHe%20has%20also%20built%20an%20API%20which%20makes%20the%20DB%20a%20lot%20of%20fun.%20%F0%9F%9A%80%0Ahttps://countrystatecity.in/%0A%0A#countries-states-cities-db%20#world-database%20#opensource%20#api)
-[![Facebook Share](https://github.com/dr5hn/dr5hn/blob/main/.github/resources/facebook-share-button.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/dr5hn/countries-states-cities-database)
-[![LinkedIn Share](https://github.com/dr5hn/dr5hn/blob/main/.github/resources/linkedin-share-button.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/dr5hn/countries-states-cities-database)
-[![Pinterest Share](https://github.com/dr5hn/dr5hn/blob/main/.github/resources/pinterest-share-button.png)](https://pinterest.com/pin/create/button/?url=https://github.com/dr5hn/countries-states-cities-database&media=&description=Hey%20everyone,%20%0AI%20found%20this%20%F0%9F%8C%8D%20Countries%20States%20Cities%20Database%20useful.%0A%0AThanks%20to%20@dr5hn%20for%20making%20this%20awesome%20project.%0A%0AHe%20has%20also%20built%20an%20API%20which%20makes%20the%20DB%20a%20lot%20of%20fun.%20%F0%9F%9A%80%0Ahttps://countrystatecity.in/%0A%0A#countries-states-cities-db%20#world-database%20#opensource%20#api)
+[![Twitter Share](https://raw.githubusercontent.com/dr5hn/dr5hn/main/.github/resources/twitter-share-button.png)](https://twitter.com/intent/tweet?url=https://github.com/dr5hn/countries-states-cities-database&text=Hey%20everyone,%20%0AI%20found%20this%20%F0%9F%8C%8D%20Countries%20States%20Cities%20Database%20useful.%0A%0AThanks%20to%20@dr5hn%20for%20making%20this%20awesome%20project.%0A%0AHe%20has%20also%20built%20an%20API%20which%20makes%20the%20DB%20a%20lot%20of%20fun.%20%F0%9F%9A%80%0Ahttps://countrystatecity.in/%0A%0A#countries-states-cities-db%20#world-database%20#opensource%20#api)
+[![Facebook Share](https://raw.githubusercontent.com/dr5hn/dr5hn/main/.github/resources/facebook-share-button.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/dr5hn/countries-states-cities-database)
+[![LinkedIn Share](https://raw.githubusercontent.com/dr5hn/dr5hn/main/.github/resources/linkedin-share-button.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/dr5hn/countries-states-cities-database)
+[![Pinterest Share](https://raw.githubusercontent.com/dr5hn/dr5hn/main/.github/resources/pinterest-share-button.png)](https://pinterest.com/pin/create/button/?url=https://github.com/dr5hn/countries-states-cities-database&media=&description=Hey%20everyone,%20%0AI%20found%20this%20%F0%9F%8C%8D%20Countries%20States%20Cities%20Database%20useful.%0A%0AThanks%20to%20@dr5hn%20for%20making%20this%20awesome%20project.%0A%0AHe%20has%20also%20built%20an%20API%20which%20makes%20the%20DB%20a%20lot%20of%20fun.%20%F0%9F%9A%80%0Ahttps://countrystatecity.in/%0A%0A#countries-states-cities-db%20#world-database%20#opensource%20#api)
 
 
 ---
