@@ -75,8 +75,8 @@ module.exports = {
       backgroundColor: '#cddc39',
       textColor: '#000', // Defaults to `#000`.
       isCloseable: false, // Defaults to `true`.
-      content: '<h3 style="margin:0; font-weight: normal;">Maintenance is scheduled on <b>Sunday, October 9 at 00:00 IST</b>. Access to API will be unavailable.</h3>'
-      // content: '⭐️ If you like CountryStateCity DB, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dr5hn/countries-states-cities-database">GitHub</a>! ⭐️',
+      // content: '<h3 style="margin:0; font-weight: normal;">Maintenance is scheduled on <b>Sunday, October 9 at 00:00 IST</b>. Access to API will be unavailable.</h3>'
+      content: '⭐️ If you like CountryStateCity DB, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dr5hn/countries-states-cities-database">GitHub</a>! ⭐️',
     },
     image: 'img/api.png',
     navbar: {
