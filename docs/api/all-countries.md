@@ -44,7 +44,7 @@ var headers = new Headers();
 headers.append("X-CSCAPI-KEY", "API_KEY");
 
 var requestOptions = {
-      method: 'GET'
+      method: 'GET',
       headers: headers,
       redirect: 'follow'
 };
