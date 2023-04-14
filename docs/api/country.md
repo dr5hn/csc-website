@@ -184,7 +184,7 @@ fmt.Println(string(bytes))
 
   </TabItem>
 
-   <TabItem value="dart" label="Dart">
+   <TabItem value="ruby" label="Ruby">
 
   ```ruby title="countries-states-cities.ruby"
 
