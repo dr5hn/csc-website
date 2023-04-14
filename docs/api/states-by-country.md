@@ -184,6 +184,25 @@ fmt.Println(string(bytes))
 
   </TabItem>
 
+  <TabItem value="ruby" label="Ruby">
+
+  ```ruby title="countries-states-cities.ruby"
+  require 'net/http'
+  require 'json'
+
+  uri = URI('https://api.countrystatecity.in/v1/countries/IN/states')
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true
+
+  request = Net::HTTP::Get.new(uri)
+  request['X-CSCAPI-KEY'] = 'API_KEY'
+
+  response = http.request(request)
+  country_states = JSON.parse(response.body)
+  p country_states
+  ```
+  </TabItem>
+
 </Tabs>
 
 ## Example Success Response
