@@ -13,11 +13,11 @@ hide_table_of_contents: true
   - [🔞 Is there any restrications on usage or How many requests is allowed per minute?](#-are-there-any-restrictions-on-usage-or-how-many-requests-are-allowed-per-minute)
   - [🆓 Is this API Free forever?](#-is-this-api-free-forever)
   - [🤔 How often data source gets updated?](#-how-often-data-source-gets-updated)
-  - [🟢 What is the API's uptime?](#🟢-what-is-the-apis-uptime)
+  - [🟢 What is the API's uptime?](#-what-is-the-apis-uptime)
   - [📝 Where can i report data related issues?](#-where-can-i-report-data-related-issues)
   - [🍕 I need something more in response, Where can i submit my request/suggestions?](#-i-need-something-more-in-response-where-can-i-submit-my-requestsuggestions)
   - [🙏 I am building a plugin/addon/project/app and i need your help.](#-i-am-building-a-pluginaddonprojectapp-and-i-need-your-help)
-  - [🤷 I have got a custom question, What should i do?](#🤷-ive-got-a-custom-question-what-should-i-do)
+  - [🤷 I have got a custom question, What should i do?](#-i-have-got-a-custom-question-what-should-i-do)
 
 ---
 ## 🔑 How do I get an API Key?
@@ -79,6 +79,6 @@ You can start raising your request/suggestions here - [Raise a Request](https://
 Well, I hardly get free time to build side stuff. But feel free to share your idea, I would be happy to be a part if it's awesome.
 
 ---
-## 🤷 "I've got a custom question", What should I do?
+## 🤷 I have got a custom question, What should I do?
 
 Please feel free to email me at [gadadarshan[at]gmail.com](mailto:gadadarshan@gmail.com)
