@@ -1,27 +1,22 @@
 import React from "react";
-import Layout from "@theme/Layout";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./styles.module.scss";
+import clsx from 'clsx';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
 
-// Prism (Rust)
-import Prism from "prism-react-renderer/prism";
-(typeof global !== "undefined" ? global : window).Prism = Prism;
-require("prismjs/components/prism-rust");
+import styles from "./styles.module.scss";
 
 import Examples from "@theme/Examples";
 import Features from "@theme/Features";
 import Hero from "@theme/Hero";
 
 function Home() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const { tagline } = siteConfig;
+  const {siteConfig} = useDocusaurusContext();
 
   return (
-      <Layout description={tagline}>
+      <Layout description={siteConfig.tagline}>
         <Hero />
 
-        <main className={styles.main}>
+        <main className={clsx(styles.main)}>
           <Features />
           <Examples />
         </main>

@@ -7,8 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./styles.module.scss";
 
 function Hero() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+  const {siteConfig} = useDocusaurusContext();
 
   return (
     <header id="hero" className={clsx("hero", styles.banner)}>

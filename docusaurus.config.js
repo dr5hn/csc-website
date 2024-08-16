@@ -1,3 +1,5 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+
 const logo = {
   alt: 'Country State City API Documentation',
   src: 'img/world.svg',
@@ -34,10 +36,11 @@ module.exports = {
   ],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           editUrl:
             'https://github.com/dr5hn/csc-website/edit/main/',
@@ -66,9 +69,9 @@ module.exports = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    prismTheme: require('prism-react-renderer/themes/github'),
     prism: {
-      additionalLanguages: ['php', 'dart'],
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula
     },
     announcementBar: {
       id: 'supportus',
@@ -94,16 +97,19 @@ module.exports = {
           href: "https://api.countrystatecity.in/play",
           label: "Playground",
           position: "left",
+          target: '_blank',
         },
         {
           href: "https://dr5hn.github.io/countries-states-cities-database/",
           label: "Demo",
           position: "left",
+          target: '_blank',
         },
         {
           href: "https://stats.uptimerobot.com/VZ2NqHlJYM",
           label: "Status",
           position: "left",
+          target: '_blank',
         },
         {
           href: "/faq/",
@@ -115,6 +121,7 @@ module.exports = {
           href: "https://forms.gle/ckZ8Gub6jS9sUihJA",
           label: "Request API Key",
           position: "right",
+          target: '_blank',
         },
         {
           href: "/donate/",
@@ -127,18 +134,21 @@ module.exports = {
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
+          target: '_blank',
         },
         {
           href: 'https://twitter.com/dr5hn',
           position: 'right',
           className: 'header-twitter-link',
           'aria-label': 'Follow me on Twitter',
+          target: '_blank',
         },
         {
           href: 'https://www.linkedin.com/in/dr5hn/',
           position: 'right',
           className: 'header-linkedin-link',
           'aria-label': 'Follow me on Twitter',
+          target: '_blank',
         },
       ],
     },

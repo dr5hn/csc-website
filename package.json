@@ -14,12 +14,13 @@
     "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\""
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0",
-    "@docusaurus/preset-classic": "^2.0.0",
-    "clsx": "^1.1.1",
+    "@docusaurus/core": "^3.5",
+    "@docusaurus/preset-classic": "^3.5",
+    "clsx": "^2.1",
     "docusaurus-plugin-sass": "~0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "prism-react-renderer": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1"
   },
   "browserslist": {
@@ -35,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0",
-    "prettier": "^2.3"
+    "@docusaurus/module-type-aliases": "^3.5",
+    "prettier": "^3.3"
   }
 }
