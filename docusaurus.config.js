@@ -71,7 +71,8 @@ module.exports = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ['php', 'dart', 'ruby', 'rust', 'go']
     },
     announcementBar: {
       id: 'supportus',
