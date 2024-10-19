@@ -209,11 +209,14 @@ fmt.Println(string(bytes))
 ## Example Success Response
 ```json
 {
-  "id": "4008,",
-  "name": "Maharashtra,",
-  "country_id": "101,",
-  "country_code": "IN,",
-  "iso2": "MH"
+  "id": 4008,
+  "name": "Maharashtra",
+  "country_id": 101,
+  "country_code": "IN",
+  "iso2": "MH",
+  "type": "state",
+  "latitude": "19.75147980",
+  "longitude": "75.71388840"
 }
 ```
 

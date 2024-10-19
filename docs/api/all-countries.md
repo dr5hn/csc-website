@@ -210,7 +210,13 @@ fmt.Println(string(bytes))
   {
     "id": 101,
     "name": "India",
-    "iso2": "IN"
+    "iso2": "IN",
+    "iso3": "IND",
+    "phonecode": "91",
+    "capital": "New Delhi",
+    "currency": "INR",
+    "native": "भारत",
+    "emoji": "🇮🇳"
   },
   ...
 ]
