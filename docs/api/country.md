@@ -187,7 +187,6 @@ fmt.Println(string(bytes))
    <TabItem value="ruby" label="Ruby">
 
   ```ruby title="countries-states-cities.ruby"
-
   require 'net/http'
   require 'json'
 
@@ -201,6 +200,94 @@ fmt.Println(string(bytes))
   response = http.request(request)
   countries = JSON.parse(response.body)
   p countries
+  ```
+
+  </TabItem>
+
+  <TabItem value="csharp" label="C#">
+
+  ```csharp title="countries-states-cities.cs"
+  using System;
+  using System.Net.Http;
+  using System.Threading.Tasks;
+
+  class Program
+  {
+      static async Task Main(string[] args)
+      {
+          var client = new HttpClient();
+          var request = new HttpRequestMessage
+          {
+              Method = HttpMethod.Get,
+              RequestUri = new Uri("https://api.countrystatecity.in/v1/countries/IN"),
+              Headers =
+              {
+                  { "X-CSCAPI-KEY", "API_KEY" },
+              },
+          };
+          using (var response = await client.SendAsync(request))
+          {
+              response.EnsureSuccessStatusCode();
+              var body = await response.Content.ReadAsStringAsync();
+              Console.WriteLine(body);
+          }
+      }
+  }
+  ```
+
+  </TabItem>
+
+  <TabItem value="java" label="Java">
+
+  ```java title="countries-states-cities.java"
+  import java.net.URI;
+  import java.net.http.HttpClient;
+  import java.net.http.HttpRequest;
+  import java.net.http.HttpResponse;
+
+  public class Main {
+      public static void main(String[] args) throws Exception {
+          HttpClient client = HttpClient.newHttpClient();
+          HttpRequest request = HttpRequest.newBuilder()
+              .uri(URI.create("https://api.countrystatecity.in/v1/countries/IN"))
+              .header("X-CSCAPI-KEY", "API_KEY")
+              .build();
+
+          HttpResponse<String> response = client.send(request,
+              HttpResponse.BodyHandlers.ofString());
+          System.out.println(response.body());
+      }
+  }
+  ```
+
+  </TabItem>
+
+  <TabItem value="swift" label="Swift">
+
+  ```swift title="countries-states-cities.swift"
+  import Foundation
+
+  let headers = [
+    "X-CSCAPI-KEY": "API_KEY"
+  ]
+
+  let request = NSMutableURLRequest(url: NSURL(string: "https://api.countrystatecity.in/v1/countries/IN")! as URL,
+      cachePolicy: .useProtocolCachePolicy,
+  timeoutInterval: 10.0)
+  request.httpMethod = "GET"
+  request.allHTTPHeaderFields = headers
+
+  let session = URLSession.shared
+  let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+    if (error != nil) {
+      print(error)
+    } else {
+      let httpResponse = response as? HTTPURLResponse
+      print(httpResponse)
+    }
+  })
+
+  dataTask.resume()
   ```
 
   </TabItem>
