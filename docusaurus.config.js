@@ -107,7 +107,7 @@ module.exports = {
           target: '_blank',
         },
         {
-          href: "https://stats.uptimerobot.com/VZ2NqHlJYM",
+          href: "https://status.countrystatecity.in/",
           label: "Status",
           position: "left",
           target: '_blank',
